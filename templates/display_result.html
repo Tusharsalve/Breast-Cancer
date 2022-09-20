@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+	Classification of  Breast Cancer
+{% endblock title %}
+
+{% block content %}
+
+<head>
+	<style>
+	.center {
+	  line-height: 200px;
+	  height: 60px;
+	  border: 3px solid rgb(13, 90, 13);
+	  text-align: center;
+	}
+	
+	.center p {
+	  line-height: 1.5;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	</style>
+	</head>
+	
+<h1 class="heading" style="text-align: center;"> Result of classification of uploaded image using Neural Network </h1><hr class="hr">
+
+<div class="center">
+
+	<h1 style="color :#2c0a47;"><b><u> Result </u>  : <i> {{ result }} </i></b></h1>
+	<br>
+</div>					
+
+				<div class="col-md-50">
+					<br>
+					<img src="{{ image.url }}" class="img-responsive" style="width: 31%;height: 10%; float: left; margin-right: 20px;" />
+					<img src="/static/images/p1.png" class="img-responsive" style="width: 31%; float: left; margin-right: 20px;" />
+					<img src="/static/images/p2.png" class="img-responsive" style="width: 31%; float: left; margin-right: 20px;" />
+				</div> 
+
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+{% endblock content %}

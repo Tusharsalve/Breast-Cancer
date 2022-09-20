@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Classification of  Breast Cancer
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'home_page_css .css' %}">
+
+</head>
+
+ 
+<div class="text-center">
+			{% if not user.is_authenticated %}
+				<h1> <b> Detection and Classification of Breast Cancer using Neural Network  </b> </h1>
+			{% else %}
+				<h1> <b> Welcome to Detection and Classification of Breast Cancer using Neural Network system, {{ user }} . ! </b> </h1>
+			{% endif %}
+
+	</div>
+
+		<br>
+		
+		<div class="w3-content w3-section" style="max-width:100%">
+			<img class="mySlides w3-animate-right" src="{% static 'img/c1.jpg' %}" style="height:400px;width:100%">
+			<img class="mySlides w3-animate-right" src="{% static 'img/c2.jpg' %}" style="height:400px;width:100%">
+			<img class="mySlides w3-animate-right" src="{% static 'img/c3.jpg' %}" style="height:400px;width:100%">
+			<img class="mySlides w3-animate-right" src="{% static 'img/c4.jpg' %}" style="height:400px;width:100%">
+		  </div>
+		  
+
+				<div class="row justify-content-center ">
+					<div class="text-center">
+		
+					 <br>
+				<p style="text-align:justify;" >	
+					<b>
+
+						The classification of breast cancer has been the subject of interest in the fields of healthcare and bioinformatics, because it is the second main reason of cancer-related deaths in women. Breast cancer can be analyzed using a biopsy where tissue is eliminated and studied under microscope. The identification of problem is based on the qualification and experienced of the histopathologists, who will attention for abnormal cells. However, if the histopathology’s is not well-trained or experienced, this may lead to wrong diagnosis. With the recent proposition in image processing and machine learning domain, there is an interest in experiment to develop a strong pattern recognition based framework to improve the quality of diagnosis. In this work, we will use the image feature extraction approach and machine learning approach for the classification of breast cancer using histology images into benign and malignant. Using Histopathological image we can preprocess this image after that apply feature extraction and classify the final result using CNN Classification techniques.
+
+					</b>			
+			</div>
+		</div>
+	
+			
+
+		<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 2500);    
+			}
+		</script>
+					
+			
+{% endblock content %}

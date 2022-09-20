@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Classification of Breast Cancer
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+<br>
+
+<br>
+
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-center" text-align= "justify">
+            <h1>
+              Detection and Classification of Breast Cancer using Neural Network
+            </h1>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-justify" text-align= "justify">
+      The classification of breast cancer has been the subject of interest in the fields of healthcare and bioinformatics, because it is the second main reason of cancer-related deaths in women. Breast cancer can be analyzed using a biopsy where tissue is eliminated and studied under microscope. The identification of problem is based on the qualification and experienced of the histopathologists, who will attention for abnormal cells. However, if the histopathology’s is not well-trained or experienced, this may lead to wrong diagnosis. With the recent proposition in image processing and machine learning domain, there is an interest in experiment to develop a strong pattern recognition based framework to improve the quality of diagnosis. In this work, we will use the image feature extraction approach and machine learning approach for the classification of breast cancer using histology images into benign and malignant. Using Histopathological image we can preprocess this image after that apply feature extraction and classify the final result using CNN Classification techniques.      
+    </div>
+</div>
+
+
+
+<br><br><br>
+<h4>
+        Introduction
+</h4>
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-justify" text-align= "justify">
+
+      Breast cancer is the most common and dangerous intrusive cancer in women and the second main effect of cancer death in women, after lung cancer. The International Agency for Research on Cancer (IARC), which is part of the World Health Organization (WHO), the numbers of deaths reasoned by cancer in the year of 2012 only come to around 8.2 million. The number of new cases is expected to growth to more than 27 million by 2030. 
+      <br><br>
+      Finding breast cancer quick and getting state-of-the-art cancer treatment are the key plan of action to avoid deaths from breast cancer. In existing, it is a widely-used way to identification of breast cancer by identifying hematoxylin and eosin (H&E) stained histological slide preparations that are checked under a high powered microscope of the changed area of the breast. In medical practice, classification of breast cancer biopsy result into different plans (e.g. cancerous and noncancerous) is manually driven by experienced pathologists.
+      <br><br>
+
+      Come out machine learning approaches and enlarging image volume developed automatic system for breast cancer classification possible and can help pathologists to obtain precise identification of problem more efficient.
+      <br><br>
+
+      Breast cancer can be find or identified using medical images testing using histology and radiology images. The radiology images search can help to find the areas where the difference is located. However, they cannot be used to find or identified whether the area is cancerous. The biopsy, where a tissue is gives as input and processed under a microscope to see if cancer is present, is the only sure way to find if an area is cancerous. After completing the biopsy, the identification of problem will be based on the qualification of the histopathologists, who will analyze the tissue under a microscope, looking for exceptional or cancerous cells. The histology images allow us to differentiate the cell nuclei types and their flowchart according to a specific pattern. Histopathologists particularly examine the consistency of cell shapes and tissue distributions and decided the cancerous regions and malignancy degree. If the histopathologists are not well-trained, this may lead to an incorrect identification of problem. Also, there is a lack of specialists, which maintain the tissue sample on hold for up to two months. There is also the issue of reproducibility, as histopathology is a subjective science. This is right especially between non-specialized pathologists, where we can get a different identification of problem on the same sample. Therefore, there is an insistent demand for computer-assisted identification of problem.
+    </div>
+</div>
+
+
+
+<!--  -->
+<!-- 
+<br><br><br>
+<h4>
+    Prevention
+</h4>
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-justify" text-align= "justify">
+        Preventing pneumonia in children is an essential component of a strategy to reduce child mortality. Immunization against Hib, pneumococcus, measles and whooping cough (pertussis) is the most effective way to prevent pneumonia.
+        Adequate nutrition is key to improving children's natural defences, starting with exclusive breastfeeding for the first 6 months of life. In addition to being effective in preventing pneumonia, it also helps to reduce the length of the illness if a child does become ill.
+        Addressing environmental factors such as indoor air pollution (by providing affordable clean indoor stoves, for example) and encouraging good hygiene in crowded homes also reduces the number of children who fall ill with pneumonia.
+        In children infected with HIV, the antibiotic cotrimoxazole is given daily to decrease the risk of contracting pneumonia.        
+    </div>
+</div> -->
+
+
+<br><br><br>
+<h4>
+    System Architecture
+</h4>
+
+    <div class="row justify-content-center mt-15">
+        <div class="col-md-20 text-center" text-align= "justify">
+                <br><br>
+                <img src="/static/img/archi.png" class="img-responsive" style="width: 100%; float: center; " />                
+                <br><br><br>         
+        </div>
+    </div>
+
+
+        <br><br><br>
+        <h4>
+            Proposed Algorithm
+        </h4>
+        
+            <div class="row justify-content-center mt-15">
+                <div class="col-md-20 text-center" text-align= "justify">
+                        <br>
+                        <img src="/static/img/architecture.png" class="img-responsive" style="width: 100%; float: center; " />                
+                        <br><br><br>         
+                </div>
+            </div>
+        
+<div class="row justify-content-center mt-15">
+  <div class="col-md-20 text-justify" text-align= "justify">
+
+    CNN algorithm used for the detection of breast cancer to gives the input as a image of breast cancer and detect the output.
+    Neural networks are a set of algorithms. They interpret sensory data through a kind of machine perception, labeling or clustering raw input.  The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. Neural networks help us cluster and classify.
+
+  </div>
+</div>
+              
+
+
+{% endblock %}
+
+
